@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Header.css';
+import PortfolioContainer from './PortfolioContainer';
 
 const styles = {
     card:{
@@ -9,10 +10,15 @@ const styles = {
 
 export default function Header() {
     return(
-        <header
+        <div>
+            <header
         style ={styles.card}
         className="header">
             Liam O'Kane
         </header>
+        <PortfolioContainer /> 
+        </div>
+       
+        
     )
 }
