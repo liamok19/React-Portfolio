@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Header.css';
 
 const styles = {
-    const:{
+    card:{
         background: 'cyan'
     },
 }
@@ -12,7 +12,7 @@ export default function Header() {
         <header
         style ={styles.card}
         className="header">
-            This is a default Header WERQ
+            Liam O'Kane
         </header>
     )
 }

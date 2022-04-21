@@ -3,17 +3,17 @@ import '../styles/Section.css';
 
 const styles = {
     card:{
-        backgroun: 'lavender',
+        background: 'orange',
     },
 }
 
 export default function Section(){
     return(
-        <section style={styles.card}>
+        <div style={styles.card}>
             <h2>Header Title</h2>
             <p>
                 Tis is filler text for a portfolio amount of work YEEHAW
             </p>
-        </section>
+        </div>
     )
 }
