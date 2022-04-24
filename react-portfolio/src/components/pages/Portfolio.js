@@ -7,6 +7,10 @@ import imgWeatherDashboard from '../../images/project_images/WeatherDashboard.gi
 import imgPasswordGenerator from '../../images/project_images/Password_Generator.gif';
 import imgWhatIf from '../../images/whatif_2021.jpg';
 import imgMTB3 from '../../images/project_images/mayathebee3_logo.png';
+import imageWolf from '../../images/project_images/100_wolf_film.png';
+import imageWinchester from '../../images/project_images/winchester_img.jpg';
+import imageUnderworld from '../../images/project_images/Underworld-blood-wars-movie-logo.png';
+import imageUpgrade from '../../images/project_images/upgrade_img.jfif';
 
 const styles = {
     iconStyle: {
@@ -163,7 +167,7 @@ export default function Portfolio(){
                     <div class="col-4">
                         <div class="card ">
                             <div class="imgBx">                     
-                                <img id="anim_projectLink2" class="anim_projects" onclick="myFunction()" src="./assets/images/project_images/100_wolf_film.png" alt="wolf_logo" />
+                                <img style={styles.imgstyle} src={imageWolf} alt="wolf_logo" />
                                 <h4>
                                     <strong>100% Wolf</strong>
                                 </h4>
@@ -184,7 +188,7 @@ export default function Portfolio(){
                     <div class="col-4">
                         <div class="card ">
                             <div class="imgBx">                     
-                                <img id="vfx_projectLink0" class="vfx_projects" onclick="myFunction()" src="./assets/images/project_images/winchester_img.jpg" alt="winchester_logo" />
+                                <img style={styles.imgstyle} src={imageWinchester} alt="winchester_logo" />
                                 <h4>
                                     <strong>Winchester</strong>
                                 </h4>
@@ -205,7 +209,7 @@ export default function Portfolio(){
                     <div class="col-4">
                         <div class="card ">
                             <div class="imgBx">                     
-                                <img id="vfx_projectLink1" class="vfx_projects" onclick="myFunction()" src="./assets/images/project_images/Underworld-blood-wars-movie-logo.png" alt="underworld_logo" />
+                                <img style={styles.imgstyle} src={imageUnderworld} alt="underworld_logo" />
                                 <h4>
                                     <strong>Underworld Blood Wars</strong>
                                 </h4>
@@ -226,7 +230,7 @@ export default function Portfolio(){
                     <div class="col-4">
                         <div class="card ">
                             <div class="imgBx">                     
-                                <img id="vfx_projectLink2" class="vfx_projects" onclick="myFunction()" src="./assets/images/project_images/upgrade_img.jfif" alt="upgrade_logo" />
+                                <img style={styles.imgstyle} src={imageUpgrade} alt="upgrade_logo" />
                                 <h4>
                                     <strong>Upgrade</strong>
                                 </h4>
