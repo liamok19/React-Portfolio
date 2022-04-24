@@ -1,22 +1,47 @@
 import React from 'react';
+import imageLinkedin from '../../images/linkedin_icon.png';
+import imageGithub from '../../images/github_icon.png';
+import imageEmail from '../../images/email_icon.png';
+import imageResume from '../../images/filesresume_icon.png';
+
+
+const styles = {
+  imgStyle: {
+    width: 100,
+    height: 100
+  },
+}
 
 export default function Contact() {
   return (
-    <div>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+    <div className="title_contact">
+      <div id="CONTACT" className="contactrow">
+          <div className="col-md-3 contactBuffer"></div>
+          <div className="col-2">
+              <h4>CONTACT</h4>
+          </div>
+          <div className="col-1 social-anchor">
+              <a  href="http://www.linkedin.com/in/liam-o-kane-b91517b7/">
+                  <img style={styles.imgStyle} src={imageLinkedin}alt="linkedin-icon"/>
+              </a>
+          </div>
+          <div className="col-1 social-anchor">
+                    <a href="https://github.com/liamok19">
+                        <img style={styles.imgStyle}  src={imageGithub} alt="github-icon" />
+                    </a>
+                </div>
+                <div className="col-1 social-anchor">
+                    <a href="mailto:liamokane19@gmail.com">
+                        <img  style={styles.imgStyle}  src={imageEmail} alt="email-icon" />
+                    </a>
+                </div>
+                <div className="col-1 social-anchor">
+                    <a  href="./assets/resume/Liam O'Kane CV 23.03.2022.docx.pdf"download>
+                        <img style={styles.imgStyle} src={imageResume} alt="files-icon" />
+                    </a>
+                </div>
+            <div className="col-md-3 contactBuffer"></div>
+      </div>
     </div>
   );
 }
