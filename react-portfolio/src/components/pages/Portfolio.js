@@ -1,4 +1,26 @@
 import React from 'react';
+import imageIMDb from '../../images/imdbIcon3.png';
+import imageGithub from '../../images/github_icon.png';
+import imgChorestodo from '../../images/CHORES.gif';
+import imgCryptoMuggles from '../../images/project_images/final-look.gif';
+import imgWeatherDashboard from '../../images/project_images/WeatherDashboard.gif';
+import imgPasswordGenerator from '../../images/project_images/Password_Generator.gif';
+import imgWhatIf from '../../images/whatif_2021.jpg';
+import imgMTB3 from '../../images/project_images/mayathebee3_logo.png';
+
+const styles = {
+    iconStyle: {
+        width: 25,
+        height: 25
+    },
+    imgstyle:{
+        width: 150, 
+        height:100,
+        flex: 1,
+        // flexDirection: 'column',
+        justifyContent: 'center'
+    },
+}
 
 export default function Portfolio(){
     return (
@@ -15,13 +37,13 @@ export default function Portfolio(){
                     <div class="col-4">
                         <div class="card ">
                             <div class="imgBx">                     
-                                <img id="wd_projectLink3" class="wd_projects" src="./assets/images/CHORES.gif" alt="groupproject2" />
+                                <img style={styles.imgstyle} src={imgChorestodo} alt="groupproject2" />
                                 <h4>
                                     <strong>Chores To Do</strong>
                                 </h4>
                                     <span>
                                         <a href="https://github.com/liamok19/choresToDo">
-                                            <img class="social-icon"  src="./assets/images/github_icon.png" alt="github-icon"/>
+                                            <img style={styles.iconStyle} src={imageGithub} alt="github-icon"/>
                                         </a>  
                                     </span>
                             </div>
@@ -36,13 +58,13 @@ export default function Portfolio(){
                     <div class="col-4">
                         <div class="card ">
                             <div class="imgBx">                     
-                                <img id="wd_projectLink0" class="wd_projects" src="./assets/images/project_images/final-look.gif" alt="groupproject1_gif" />
+                                <img style={styles.imgstyle} src={imgCryptoMuggles} alt="groupproject1_gif" />
                                 <h4>
                                     <strong>Crypto Muggles</strong>
                                 </h4>
                                     <span>
                                         <a href="https://github.com/liamok19/Crypto-Muggles.git">
-                                            <img class="social-icon"  src="./assets/images/github_icon.png" alt="github-icon"/>
+                                            <img style={styles.iconStyle} src={imageGithub} alt="github-icon"/>
                                         </a>  
                                     </span>
                             </div>
@@ -57,13 +79,13 @@ export default function Portfolio(){
                     <div class="col-4">
                         <div class="card ">
                             <div class="imgBx">                     
-                                <img id="wd_projectLink1" class="wd_projects" src="./assets/images/project_images/WeatherDashboard.gif" alt="weather_gif" />
+                                <img style={styles.imgstyle} src={imgWeatherDashboard} alt="weather_gif" />
                                 <h4>
                                     <strong>Weather Dashboard</strong>
                                 </h4>
                                 <span>
                                     <a href="https://github.com/liamok19/weatherDashboard.git">
-                                        <img class="social-icon"  src="./assets/images/github_icon.png" alt="github-icon"/>
+                                        <img style={styles.iconStyle} src={imageGithub} alt="github-icon"/>
                                     </a>  
                                 </span>
                             </div>
@@ -78,13 +100,13 @@ export default function Portfolio(){
                     <div class="col-4">
                         <div class="card ">
                             <div class="imgBx">                     
-                                <img id="wd_projectLink2" class="wd_projects" src="./assets/images/project_images/Password Generator.gif" alt="password-gif" />
+                                <img style={styles.imgstyle} src={imgPasswordGenerator} alt="password-gif" />
                                 <h4>
                                     <strong>Password Generator</strong>
                                 </h4>
                                 <span>
                                     <a href="https://github.com/liamok19/passwordGeneratorJS">
-                                        <img class="social-icon"  src="./assets/images/github_icon.png" alt="github-icon"/>
+                                        <img style={styles.iconStyle} src={imageGithub} alt="github-icon"/>
                                     </a>  
                                 </span>
                             </div>
@@ -99,13 +121,13 @@ export default function Portfolio(){
                     <div class="col-4">
                         <div class="card ">
                             <div class="imgBx">                     
-                                <img id="anim_projectLink0" class="anim_projects" onclick="myFunction()" src="./assets/images/whatif_2021.jpg" alt="whatif.img" />
+                                <img style={styles.imgstyle} src={imgWhatIf} alt="whatif.img" />
                                 <h4>
                                     <strong>What If...?</strong>
                                 </h4>
                                 <span>
                                     <a href="https://www.imdb.com/title/tt10168312/">
-                                        <img class="social-icon"  src="./assets/images/imdbIcon3.png" alt="imdb-icon"/>
+                                        <img style={styles.iconStyle} src={imageIMDb} alt="imdb-icon"/>
                                     </a>  
                                 </span>
                             </div>
@@ -120,13 +142,13 @@ export default function Portfolio(){
                     <div class="col-4">
                         <div class="card ">
                             <div class="imgBx">                     
-                                <img id="anim_projectLink1" class="anim_projects" onclick="myFunction()" src="./assets/images/project_images/mayathebee3_logo.png" alt="mtb3_logo" />
+                                <img style={styles.imgstyle} src={imgMTB3} alt="mtb3_logo" />
                                 <h4 id="mtb3_font">
                                     <strong>Maya the Bee 3 The Golden Orb</strong>
                                 </h4>
                                 <span>
                                     <a href="https://www.imdb.com/title/tt11792512/?ref_=nv_sr_srsg_0">
-                                        <img class="social-icon"  src="./assets/images/imdbIcon3.png" alt="imdb-icon"/>
+                                        <img style={styles.iconStyle} src={imageIMDb} alt="imdb-icon"/>
                                     </a>  
                                 </span>
                             </div>
@@ -147,7 +169,7 @@ export default function Portfolio(){
                                 </h4>
                                 <span>
                                     <a href="https://www.imdb.com/title/tt8774798/?ref_=fn_al_tt_1">
-                                        <img class="social-icon"  src="./assets/images/imdbIcon3.png" alt="imdb-icon"/>
+                                        <img style={styles.iconStyle} src={imageIMDb} alt="imdb-icon"/>
                                     </a>  
                                 </span>
                             </div>
@@ -168,7 +190,7 @@ export default function Portfolio(){
                                 </h4>
                                 <span>
                                     <a href="https://www.imdb.com/title/tt1072748/?ref_=nv_sr_srsg_3">
-                                        <img class="social-icon"  src="./assets/images/imdbIcon3.png" alt="imdb-icon"/>
+                                        <img style={styles.iconStyle} src={imageIMDb} alt="imdb-icon"/>
                                     </a>  
                                 </span>
                             </div>
@@ -189,7 +211,7 @@ export default function Portfolio(){
                                 </h4>
                                 <span>
                                     <a href="https://www.imdb.com/title/tt3717252/?ref_=fn_al_tt_1">
-                                        <img class="social-icon"  src="./assets/images/imdbIcon3.png" alt="imdb-icon"/>
+                                        <img style={styles.iconStyle} src={imageIMDb} alt="imdb-icon"/>
                                     </a>  
                                 </span>
                             </div>
@@ -210,7 +232,7 @@ export default function Portfolio(){
                                 </h4>
                                 <span>
                                     <a href="https://www.imdb.com/title/tt6499752/?ref_=fn_al_tt_1">
-                                        <img class="social-icon"  src="./assets/images/imdbIcon3.png" alt="imdb-icon"/>
+                                        <img style={styles.iconStyle} src={imageIMDb} alt="imdb-icon"/>
                                     </a>  
                                 </span>
                             </div>
