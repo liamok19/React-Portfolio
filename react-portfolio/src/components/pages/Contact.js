@@ -7,10 +7,13 @@ const styles = {
   },
 };
 
+//form needs to include the following: name, an email address, and a message
+
 export default function Contact() {
   // Here we set two state variables for firstName and lastName using `useState`
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
@@ -28,6 +31,7 @@ export default function Contact() {
     alert(`Hello ${firstName} ${lastName}`);
     setFirstName("");
     setLastName("");
+    setEmail("");
   };
 
   // export default function Contact() {
@@ -53,6 +57,13 @@ export default function Contact() {
               onChange={handleInputChange}
               type="text"
               placeholder="Last Name"
+            />
+              <input
+              value={email}
+              name="email"
+              onChange={handleInputChange}
+              type="text"
+              placeholder="Email"
             />
             <button type="button" onClick={handleFormSubmit}>
               Submit
