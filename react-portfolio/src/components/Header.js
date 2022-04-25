@@ -12,8 +12,9 @@ import '../styles/Header.css';
 import NavTabs from './NavTab';
 
 const styles = {
-    card:{
-        background: 'cyan'
+    headerCard:{
+        background: '#8CAB9B',
+        fontSize: 30
     },
 }
 
@@ -23,7 +24,7 @@ export default function Header() {
     return(
         <div>
             <header
-        style ={styles.card}
+        style={styles.headerCard}
         className="header">
             Liam O'Kane     
             <NavTabs />

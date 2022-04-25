@@ -11,7 +11,7 @@ import '../styles/Footer.css'
 
 const styles = {
     card: {
-        background: 'red'
+        background: '#45775E'
     },
 }
 

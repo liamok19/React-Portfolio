@@ -10,12 +10,22 @@ const styles = {
     width: 100,
     height: 100
   },
+  color: {
+    color: '#3A7759',
+    backgroundColor: '#8CAB9B'
+  },
+  containerStyle: {
+    display: 'flex',
+    alignItems: 'center'
+  }
 }
+
+
 
 export default function Contact() {
   return (
-    <div className="title_contact">
-      <div id="CONTACT" className="contactrow">
+    <div style={styles.color} className="title_contact">
+      <div style={styles.containerStyle} id="CONTACT" className="contactrow">
           <div className="col-md-3 contactBuffer"></div>
           <div className="col-2">
               <h4>CONTACT</h4>

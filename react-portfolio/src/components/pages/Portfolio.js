@@ -22,13 +22,18 @@ const styles = {
         height:100,
         flex: 1,
         // flexDirection: 'column',
+        display: 'flex',
         justifyContent: 'center'
     },
+    color: {
+        // color: '#3A7759',
+        backgroundColor: '#8CAB9B'
+    }
 }
 
 export default function Portfolio(){
     return (
-        <div>
+        <div style={styles.color}>
             <div class="container navCtr">
                 <div class="row worklist">
                     <h3 id="WORK" class="col-sm-6">PORTFOLIO</h3>
@@ -39,7 +44,7 @@ export default function Portfolio(){
             <div class="container">
                 <div class="row">
                     <div class="col-4">
-                        <div class="card ">
+                        <div class="card">
                             <div class="imgBx">                     
                                 <img style={styles.imgstyle} src={imgChorestodo} alt="groupproject2" />
                                 <h4>
