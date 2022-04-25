@@ -2,14 +2,15 @@ import React from "react";
 
 const styles = {
   card: {
-    color: 'black'
+    color: "black",
+    borderStyle: "none"
   }
 }
 
 function NavTabs({ currentPage, handlePageChange}){
     return(
         
-        <ul className="nav nav-tabs">
+        <ul style={styles.card} className="nav nav-tabs">
       <li className="nav-item">
         <a
           href="#about"

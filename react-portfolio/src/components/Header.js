@@ -18,7 +18,9 @@ const styles = {
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "space-between" 
+    justifyContent: "space-between", 
+    paddingBottom: 50,
+    borderStyle: "none"
   },
 };
 
