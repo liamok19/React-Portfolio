@@ -15,6 +15,10 @@ const styles = {
   headerCard: {
     background: "#8CAB9B",
     fontSize: 30,
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between" 
   },
 };
 

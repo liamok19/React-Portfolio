@@ -28,7 +28,7 @@ export default function Contact() {
     e.preventDefault();
 
     // Alert the user their first and last name, clear the inputs
-    alert(`Hello ${firstName} ${lastName}`);
+    alert(`Hello ${firstName} ${lastName} ${email}`);
     setFirstName("");
     setLastName("");
     setEmail("");
