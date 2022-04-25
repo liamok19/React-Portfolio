@@ -10,7 +10,7 @@ import "../styles/Footer.css";
 import imageLinkedin from "../images/linkedin_icon.png";
 import imageGithub from "../images/github_icon.png";
 import imageEmail from "../images/email_icon.png";
-import imageResume from "../images/filesresume_icon.png";
+import imageTwitter from "../images/twitter_icon.png";
 
 const styles = {
   card: {
@@ -19,7 +19,7 @@ const styles = {
     alignItems: "center",
     justifyContent: "center",
     padding: 10,
-    margin: 0
+    margin: 0,
   },
   imgStyle: {
     width: 50,
@@ -51,8 +51,8 @@ export default function Footer() {
         </a>
       </div>
       <div style={styles.card} className="col-1 social-anchor">
-        <a href="./assets/resume/Liam O'Kane CV 23.03.2022.docx.pdf" download>
-          <img style={styles.imgStyle} src={imageResume} alt="files-icon" />
+        <a href="https://twitter.com/ok_leeham" download>
+          <img style={styles.imgStyle} src={imageTwitter} alt="email-icon" />
         </a>
       </div>
       <div className="col-4 contactBuffer"></div>
