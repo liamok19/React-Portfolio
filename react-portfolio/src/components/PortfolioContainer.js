@@ -7,8 +7,7 @@ import Resume from './pages/Resume';
 import Footer from './Footer';
 
 
-export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('About');
+export default function PortfolioContainer({currentPage, handlePageChange}) {
 
   const renderPage = () => {
     if (currentPage === 'About') {
@@ -31,7 +30,7 @@ export default function PortfolioContainer() {
 
   return (
     <div>
-      <NavTabs currentPage={currentPage} handlePageChange={setCurrentPage} />
+      {/* <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} /> */}
       {renderPage()}
     </div>
   );
