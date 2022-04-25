@@ -4,11 +4,9 @@ import image from '../../images/liamo_headshot_01.JPG'
 const styles = {
   card1:{
     fontSize: 15,
-    // background: 'cyan',
   },
   card2:{
     fontSize: 13,
-    // background: 'cyan',
   },
   imgStyle: {
     width: 450,

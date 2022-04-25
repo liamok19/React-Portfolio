@@ -1,5 +1,11 @@
 import React from "react";
 
+const styles = {
+  card: {
+    color: 'black'
+  }
+}
+
 function NavTabs({ currentPage, handlePageChange}){
     return(
         
@@ -8,9 +14,8 @@ function NavTabs({ currentPage, handlePageChange}){
         <a
           href="#about"
           onClick={() => handlePageChange('About')}
-          //*  TODO: BONUS: Add a comment explaining what kind of operator this is and what it is checking for
-
           className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+          style={styles.card}
         >
           About Me
         </a>
@@ -19,9 +24,8 @@ function NavTabs({ currentPage, handlePageChange}){
         <a
           href="#portfolio"
           onClick={() => handlePageChange('Portfolio')}
-          //  TODO: Add a comment explaining what this logic is doing
-
           className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+          style={styles.card}
         >
           Portfolio
         </a>
@@ -30,9 +34,8 @@ function NavTabs({ currentPage, handlePageChange}){
         <a
           href="#contact"
           onClick={() => handlePageChange('Contact')}
-          //  TODO: Add a comment explaining what this logic is doing
-
           className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+          style={styles.card}
         >
           Contact
         </a>
@@ -40,10 +43,9 @@ function NavTabs({ currentPage, handlePageChange}){
       <li className="nav-item">
         <a
           href="#resume"
-          //  TODO: Add a comment explaining what this logic is doing
-
           onClick={() => handlePageChange('Resume')}
           className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+          style={styles.card}
         >
           Resume'
         </a>
