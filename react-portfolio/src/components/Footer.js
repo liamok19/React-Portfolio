@@ -17,7 +17,9 @@ const styles = {
     background: "#45775E",
     display: "flex",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    padding: 10,
+    margin: 0
   },
   imgStyle: {
     width: 50,
