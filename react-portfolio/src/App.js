@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import PortfolioContainer from "./components/PortfolioContainer";
+import PortfolioContainer from "./containers/portfolio/PortfolioContainer";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("About");
