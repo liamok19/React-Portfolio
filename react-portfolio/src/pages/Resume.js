@@ -22,28 +22,32 @@ const styles = {
     alignItems: "center",
   },
   iconHeading: {
-      fontSize: 20, 
-      alignItems: "center"
+    fontSize: 20,
+    alignItems: "center",
   },
   iconSize: {
-      width: 20, 
-      height: 20
-  }
+    width: 20,
+    height: 20,
+  },
 };
 
 export default function Resume() {
   return (
     <div style={styles.color}>
       <h1> Resume </h1>
-      <h2 style={styles.iconHeading}> Downloadable version here</h2>
-      <a href="./assets/resume/Liam O'Kane CV 23.03.2022.docx.pdf" download>
-        <img style={styles.iconSize} src={resumeIcon} alt="files-icon" />
-      </a>
+      <h2 style={styles.iconHeading}>
+        {" "}
+        Downloadable version here
+        {" "}
+        <a href="./assets/resume/Liam O'Kane CV 23.03.2022.docx.pdf" download>
+          <img style={styles.iconSize} src={resumeIcon} alt="files-icon" />
+        </a>
+      </h2>
+
       <div style={styles.containerStyle}>
         <img style={styles.pdfStyle} src={imageResumepage1} alt="Resume1" />
         <img style={styles.pdfStyle} src={imageResumepage2} alt="Resume2" />
       </div>
-    
     </div>
   );
 }
