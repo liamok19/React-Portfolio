@@ -13,7 +13,7 @@
 ## Description
 # What is the app for?
 ```md
-Building a single-page application. It's to view the latest React examples.
+Building a single-page application. It's to view the latest Project examples using a React application. Shocasing useState, forms and inbuilt hanles. Inline styling applied. 
 ```
 
 ## Strategy
