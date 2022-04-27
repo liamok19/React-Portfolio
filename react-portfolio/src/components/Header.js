@@ -7,7 +7,6 @@
 //integrate the navtab bar so they sit inside this container.
 
 import React, { useState } from "react";
-import "../styles/Header.css";
 import NavTabs from "./NavTab";
 // import Portfolio from './pages/Portfolio';
 

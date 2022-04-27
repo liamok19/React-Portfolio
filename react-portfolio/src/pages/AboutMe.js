@@ -17,7 +17,9 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     // color: '#3A7759',
-    backgroundColor: '#8CAB9B'
+    backgroundColor: '#8CAB9B',
+    paddingRight: 75,
+    paddingLeft: 75
     }, 
 }
 

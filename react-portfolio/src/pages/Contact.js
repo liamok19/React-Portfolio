@@ -7,6 +7,11 @@ const styles = {
     color: "#3A7759",
     backgroundColor: "#8CAB9B",
   },
+  containerStyle: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+  }
 };
 
 //form needs to include the following: name, an email address, and a message
@@ -68,9 +73,9 @@ export default function Contact() {
   // export default function Contact() {
   return (
     <div style={styles.color} className="title_contact">
-      <div id="CONTACT" className="contactrow">
+      <div style={styles.containerStyle} id="CONTACT" className="contactrow">
         <div className="col-md-3 contactBuffer"></div>
-        <div className="col-2">
+        <div  className="col-2">
           <p>
             Hello {firstName} {lastName}
           </p>
