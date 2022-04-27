@@ -19,7 +19,8 @@ const styles = {
     alignItems: "center",
     justifyContent: "space-between", 
     paddingBottom: 50,
-    borderStyle: "none"
+    borderStyle: "none",
+    paddingLeft: 70,
   },
 };
 
