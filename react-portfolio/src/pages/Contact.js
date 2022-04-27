@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import validator from 'validator';
+
 
 const styles = {
   color: {
@@ -17,6 +19,16 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
+  const [emailError, setEmailError] = useState('')
+  const validateEmail = (e) => {
+    var email = e.target.value
+  
+    if (validator.isEmail(email)) {
+      setEmailError('Valid Email :)')
+    } else {
+      setEmailError('Enter valid Email!')
+    }
+  }
 
   function onBlurRequire(e){
     const {name, value} = e.target;
@@ -80,6 +92,12 @@ export default function Contact() {
               onBlur={onBlurRequire}
 
             />
+            <span>Enter Email: </span><input type="text" id="userEmail" 
+                  onChange={(e) => validateEmail(e)}></input> <br />
+                  <span style={{
+                    fontWeight: 'bold',
+                    color: 'red',
+                  }}>{emailError}</span>
               <input
               onBlur={onBlurRequire}
               value={email}
@@ -88,7 +106,20 @@ export default function Contact() {
               type="text"
               placeholder="Email"
             />
-
+            {/* <div style={{
+                margin: 'auto',
+                marginLeft: '300px',
+              }}>
+                <pre>
+                  <h2>Validating Email in ReactJS</h2>
+                  <span>Enter Email: </span><input type="text" id="userEmail" 
+                  onChange={(e) => validateEmail(e)}></input> <br />
+                  <span style={{
+                    fontWeight: 'bold',
+                    color: 'red',
+                  }}>{emailError}</span>
+                </pre>
+              </div> */}
             <p style={{
               color: 'red'
             }} className="error-message">{errorMessage}</p>

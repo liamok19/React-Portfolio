@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import PortfolioContainer from "./containers/portfolio/PortfolioContainer";
 
+
 function App() {
   const [currentPage, setCurrentPage] = useState("About");
 
