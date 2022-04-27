@@ -11,6 +11,9 @@ const styles = {
   color: {
     // color: '#3A7759',
     backgroundColor: "#8CAB9B",
+    display: "flex", 
+    flexDirection: "column",
+    alignItems: "center"
   },
   pdfStyle: {
     width: 450,
