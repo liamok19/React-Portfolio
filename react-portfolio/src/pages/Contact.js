@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import validator from 'validator';
-
+import validator from "validator";
 
 const styles = {
   color: {
@@ -11,11 +10,11 @@ const styles = {
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-  }
+  },
 };
 
 //form needs to include the following: name, an email address, and a message
-// formit 
+// formit
 
 export default function Contact() {
   // Here we set two state variables for firstName and lastName using `useState`
@@ -24,22 +23,22 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
-  const [emailError, setEmailError] = useState('')
+  const [emailError, setEmailError] = useState("");
   const validateEmail = (e) => {
-    var email = e.target.value
-  
-    if (validator.isEmail(email)) {
-      setEmailError('Valid Email :)')
-    } else {
-      setEmailError('Enter valid Email!')
-    }
-  }
+    var email = e.target.value;
 
-  function onBlurRequire(e){
-    const {name, value} = e.target;
-    if(!value){
+    if (validator.isEmail(email)) {
+      setEmailError("Valid Email :)");
+    } else {
+      setEmailError("Enter valid Email!");
+    }
+  };
+
+  function onBlurRequire(e) {
+    const { name, value } = e.target;
+    if (!value) {
       setErrorMessage(`${name} is required!`);
-    }else{
+    } else {
       setErrorMessage("");
     }
   }
@@ -49,11 +48,17 @@ export default function Contact() {
     const { name, value } = e.target;
 
     const handler = {
-      "firstName": setFirstName,
-      "lastName": setLastName,
-      "email": setEmail
-    }
+      firstName: setFirstName,
+      lastName: setLastName,
+      email: setEmail,
+    };
     handler[name](value);
+
+    if (validator.isEmail(email)) {
+      setEmailError("Valid Email :)");
+    } else {
+      setEmailError("Enter valid Email!");
+    }
 
     // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
     // return name === "firstName" ? setFirstName(value) : setLastName(value);
@@ -75,7 +80,7 @@ export default function Contact() {
     <div style={styles.color} className="title_contact">
       <div style={styles.containerStyle} id="CONTACT" className="contactrow">
         <div className="col-md-3 contactBuffer"></div>
-        <div  className="col-2">
+        <div className="col-2">
           <p>
             Hello {firstName} {lastName}
           </p>
@@ -95,15 +100,8 @@ export default function Contact() {
               type="text"
               placeholder="Last Name"
               onBlur={onBlurRequire}
-
             />
-            <span>Enter Email: </span><input type="text" id="userEmail" 
-                  onChange={(e) => validateEmail(e)}></input> <br />
-                  <span style={{
-                    fontWeight: 'bold',
-                    color: 'red',
-                  }}>{emailError}</span>
-              <input
+            <input
               onBlur={onBlurRequire}
               value={email}
               name="email"
@@ -111,24 +109,29 @@ export default function Contact() {
               type="text"
               placeholder="Email"
             />
-            {/* <div style={{
-                margin: 'auto',
-                marginLeft: '300px',
-              }}>
-                <pre>
-                  <h2>Validating Email in ReactJS</h2>
-                  <span>Enter Email: </span><input type="text" id="userEmail" 
-                  onChange={(e) => validateEmail(e)}></input> <br />
-                  <span style={{
-                    fontWeight: 'bold',
-                    color: 'red',
-                  }}>{emailError}</span>
-                </pre>
-              </div> */}
-            <p style={{
-              color: 'red'
-            }} className="error-message">{errorMessage}</p>
-            <button disabled={errorMessage !== ""} type="button" onClick={handleFormSubmit}>
+            <p>
+              <span
+                style={{
+                  fontWeight: "bold",
+                  color: "red",
+                }}
+              >
+                {emailError}
+              </span>
+            </p>
+            <p
+              style={{
+                color: "red",
+              }}
+              className="error-message"
+            >
+              {errorMessage}
+            </p>
+            <button
+              disabled={errorMessage !== ""}
+              type="button"
+              onClick={handleFormSubmit}
+            >
               Submit
             </button>
           </form>
