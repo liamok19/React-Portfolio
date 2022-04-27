@@ -29,7 +29,15 @@ Building a single-page application. It's to view the latest React examples.
 | <del> WHEN I am presented with the Portfolio section </del>|  <del> THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repositories </del> |
 | <del>  WHEN I am presented with the Contact section </del>  |  <del> THEN I see a contact form with fields for a name, an email address, and a message </del>  |
 |<del> WHEN I move my cursor out of one of the form fields without entering text </del>  | <del> THEN I receive a notification that this field is required </del>  |
-| WHEN I enter text into the email address field | THEN I receive a notification if I have entered an invalid email address |
+|<del> WHEN I enter text into the email address field</del> | <del>THEN I receive a notification if I have entered an invalid email address </del> |
 | <del>  WHEN I am presented with the Resume section </del>  | <del>  THEN I see a link to a downloadable resume and a list of the developer’s proficiencies </del>  |
 |<del> WHEN I view the footer </del> |<del> THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter) </del> |
+
+## Usage
+# Final Look
+![alt text](./react-portfolio/src/images/reactApp.gif)<br><br>
+
+## References
+![alt text](./react-portfolio/src/images/20-react-homework-demo-01.gif)<br><br>
+
 
