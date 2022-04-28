@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.e7720ab7.css",
+    "main.js": "/React-Portfolio/static/js/main.c09811a5.js",
+    "static/media/liamoemployeetracker.gif": "/React-Portfolio/static/media/liamoemployeetracker.359505054ec0b6fb0cab.gif",
+    "static/media/liamokportfolio.gif": "/React-Portfolio/static/media/liamokportfolio.5cd30ac0716772050e7e.gif",
+    "static/media/CHORES.gif": "/React-Portfolio/static/media/CHORES.ab111b244f1b8310a47b.gif",
+    "static/media/final-look.gif": "/React-Portfolio/static/media/final-look.5d9851039f61a3e4fb15.gif",
+    "static/media/WeatherDashboard.gif": "/React-Portfolio/static/media/WeatherDashboard.ce34623bc97c69612fa7.gif",
+    "static/media/LiamOKaneCV_Page_1.png": "/React-Portfolio/static/media/LiamOKaneCV_Page_1.59fca6d56d514641cb65.png",
+    "static/media/Password_Generator.gif": "/React-Portfolio/static/media/Password_Generator.695dde978539412b80f0.gif",
+    "static/media/liamo_headshot_01.JPG": "/React-Portfolio/static/media/liamo_headshot_01.fc36d3d53108cdcc618b.JPG",
+    "static/media/twitter_icon.png": "/React-Portfolio/static/media/twitter_icon.01fb25e39073b67bfa8c.png",
+    "static/media/LiamOKaneCV_Page_2.png": "/React-Portfolio/static/media/LiamOKaneCV_Page_2.b0af0b4e5b1d38aacaa1.png",
+    "static/media/filesresume_icon.png": "/React-Portfolio/static/media/filesresume_icon.6003e327aa5d63d2bae8.png",
+    "index.html": "/React-Portfolio/index.html",
+    "main.e7720ab7.css.map": "/React-Portfolio/static/css/main.e7720ab7.css.map",
+    "main.c09811a5.js.map": "/React-Portfolio/static/js/main.c09811a5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7720ab7.css",
+    "static/js/main.c09811a5.js"
+  ]
+}
