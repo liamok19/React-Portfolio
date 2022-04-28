@@ -19,7 +19,8 @@ const styles = {
     // color: '#3A7759',
     backgroundColor: '#8CAB9B',
     paddingRight: 75,
-    paddingLeft: 75
+    paddingLeft: 75,
+    paddingBottom: 270
     }, 
 }
 

@@ -34,7 +34,7 @@ const styles = {
     backgroundColor: "#8CAB9B",
   },
   pageStyle: {
-    paddingBottom: 17
+    paddingBottom: 160
   },
 };
 
@@ -98,7 +98,7 @@ export default function Portfolio() {
           </h3>
         </div>
       </div>
-      <section  id="portfolioSection" class="workBuffer">
+      <section style={styles.pageStyle} id="portfolioSection" class="workBuffer">
         <div class="container">
           <div class="row">
             {projects.map((project) => (

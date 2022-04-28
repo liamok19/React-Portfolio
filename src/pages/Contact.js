@@ -10,6 +10,7 @@ const styles = {
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
+    paddingBottom: 560
   },
 };
 
