@@ -35,9 +35,7 @@ Building a single-page application. It's to view the latest Project examples usi
 
 ## Usage
 # Final Look
-![alt text](./react-portfolio/src/images/reactApp.gif)<br><br>
+![alt text](./src/images/reactApp.gif)<br><br>
 
 ## References
-![alt text](./react-portfolio/src/images/20-react-homework-demo-01.gif)<br><br>
-
-## Testing update
+![alt text](./src/images/20-react-homework-demo-01.gif)<br><br>
