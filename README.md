@@ -39,5 +39,3 @@ Building a single-page application. It's to view the latest Project examples usi
 
 ## References
 ![alt text](./react-portfolio/src/images/20-react-homework-demo-01.gif)<br><br>
-
-
