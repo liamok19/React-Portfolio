@@ -8,6 +8,8 @@
 
 import React, { useState } from "react";
 import NavTabs from "./NavTab";
+import "../styles/Header.css";
+
 // import Portfolio from './pages/Portfolio';
 
 const styles = {
@@ -17,7 +19,7 @@ const styles = {
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "space-between", 
+    justifyContent: "space-between",
     paddingBottom: 50,
     borderStyle: "none",
     paddingLeft: 70,
@@ -27,6 +29,7 @@ const styles = {
 export default function Header({ currentPage, handlePageChange }) {
   return (
     <div>
+      <div className="triangleRight"></div>
       <header style={styles.headerCard} className="header">
         Liam O'Kane
         <NavTabs
