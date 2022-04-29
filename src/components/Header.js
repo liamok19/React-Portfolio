@@ -23,6 +23,7 @@ const styles = {
     paddingBottom: 50,
     borderStyle: "none",
     paddingLeft: 70,
+    fontFamily:"Helvetica",
   },
 };
 
