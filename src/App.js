@@ -3,18 +3,11 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import PortfolioContainer from "./containers/portfolio/PortfolioContainer";
 import { Canvas } from "@react-three/fiber";
-import { Box } from "./components/Box";
+import { Box, Box2, Box3 } from "./components/Box";
 
 
 function App() {
   const [currentPage, setCurrentPage] = useState("About");
-
-  const [currentColor, setCurrentColor] = useState('orange'); 
- 
-  const handleColorChange = (event, color) => { 
-    event.preventDefault(); 
-    setCurrentColor(color); 
-  };
   //   useEffect(() => {
   //     console.log("the current page is ", currentPage);
   //   }, [currentPage]);
@@ -27,7 +20,9 @@ function App() {
         <ambientLight intensity={0.5} />
         <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
         <pointLight position={[-5, -5, -5]} />
-        <Box currentColor={currentColor} position={[1, 1, 1]} /> 
+        <Box position={[15, 2, 1]} /> 
+        <Box2 position={[0, -1, 1]} /> 
+        <Box3 position={[-15, 2, 1]} /> 
       </Canvas> 
       <PortfolioContainer
         currentPage={currentPage}

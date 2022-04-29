@@ -30,7 +30,7 @@ const styles = {
 export default function Header({ currentPage, handlePageChange }) {
   return (
     <div>
-      <div className="triangleRight"></div>
+      {/* <div className="triangleRight"></div> */}
       <header className="header" style={styles.headerCard} >
         Liam O'Kane
         <NavTabs
