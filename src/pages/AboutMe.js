@@ -3,10 +3,10 @@ import image from '../images/liamo_headshot_01.JPG'
 
 const styles = {
   card1:{
-    fontSize: 15,
+    fontSize: 30,
   },
   card2:{
-    fontSize: 13,
+    fontSize: 20,
   },
   imgStyle: {
     width: 450,
