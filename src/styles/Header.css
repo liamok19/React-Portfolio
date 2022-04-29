@@ -2,7 +2,11 @@
 	width: 0;
 	height: 0;
 	border-top: 250px solid transparent;
-	border-left: 110px solid #45775E;
+	border-left: 65px solid #45775E;
 	border-bottom: 400px solid transparent;
     position: fixed;
 };
+
+.header {
+	border-bottom: 10px solid #45775E;
+}

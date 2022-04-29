@@ -30,12 +30,13 @@ export default function Header({ currentPage, handlePageChange }) {
   return (
     <div>
       <div className="triangleRight"></div>
-      <header style={styles.headerCard} className="header">
+      <header className="header" style={styles.headerCard} >
         Liam O'Kane
         <NavTabs
           currentPage={currentPage}
           handlePageChange={handlePageChange}
         />
+
         {/* <Portfolio /> */}
       </header>
     </div>
