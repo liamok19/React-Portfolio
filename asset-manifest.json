@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.e7720ab7.css",
-    "main.js": "/React-Portfolio/static/js/main.306b4086.js",
+    "main.css": "/React-Portfolio/static/css/main.9aa90dd0.css",
+    "main.js": "/React-Portfolio/static/js/main.1bcb6af6.js",
     "static/media/liamoemployeetracker.gif": "/React-Portfolio/static/media/liamoemployeetracker.359505054ec0b6fb0cab.gif",
     "static/media/liamokportfolio.gif": "/React-Portfolio/static/media/liamokportfolio.5cd30ac0716772050e7e.gif",
     "static/media/CHORES.gif": "/React-Portfolio/static/media/CHORES.ab111b244f1b8310a47b.gif",
@@ -14,11 +14,11 @@
     "static/media/LiamOKaneCV_Page_2.png": "/React-Portfolio/static/media/LiamOKaneCV_Page_2.b0af0b4e5b1d38aacaa1.png",
     "static/media/filesresume_icon.png": "/React-Portfolio/static/media/filesresume_icon.6003e327aa5d63d2bae8.png",
     "index.html": "/React-Portfolio/index.html",
-    "main.e7720ab7.css.map": "/React-Portfolio/static/css/main.e7720ab7.css.map",
-    "main.306b4086.js.map": "/React-Portfolio/static/js/main.306b4086.js.map"
+    "main.9aa90dd0.css.map": "/React-Portfolio/static/css/main.9aa90dd0.css.map",
+    "main.1bcb6af6.js.map": "/React-Portfolio/static/js/main.1bcb6af6.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7720ab7.css",
-    "static/js/main.306b4086.js"
+    "static/css/main.9aa90dd0.css",
+    "static/js/main.1bcb6af6.js"
   ]
 }
